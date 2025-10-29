@@ -55,6 +55,8 @@ class EntryManager:
         self.entries: List[Entry] = []
 
     def save(self):
+        os.makedirs(self.data_path, exist_ok=True)
+
         for item in self.entries:
             item.save(self.data_path)
 

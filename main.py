@@ -23,7 +23,7 @@ app.add_middleware(
 
 
 class Settings(BaseSettings):
-    data_folder: str = '/tmp/'
+    data_folder: str = 'F:/_Python/'
 
 settings = Settings()
 
